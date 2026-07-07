@@ -1,5 +1,271 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nichakamol Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Merriweather , Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #AA4A44;
+            color: #FF6347;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #D4AF37;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .navbar h1 {
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #DAFAFA;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1abc9c;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #16a085;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        section h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        section h3::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #1abc9c;
+            margin: 0.5rem auto 0 auto;
+        }
+
+        .about-content {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .project-info h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .project-info p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            text-align: center;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .nav-links {
+                margin-top: 1rem;
+            }
+            .nav-links li {
+                margin: 0 1rem;
+            }
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
-  <meta charset="UTF-8">
-  
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1>Jitchaya.</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#sop">sop</a></li>            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="229-2291464_doremon-sticker-doraemon-pics-for-profile-hd-png.png">
+        <h2>สวัสดีจ้า จิตชญา นาคทรัพย์ เองงง <3 </h2>
+        <p> นักเรียนม.6/3 สายการโรงแรมและการท่องเที่ยว  .</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
+    <div class="container">
+        <section id="about">
+            <h3>อยากรู้หรอมาอ่านสิจ๊ะ</h3>
+            <div class="about-content">
+                <p> นี่คือเว็บสำหรับคนที่ไม่มีอนาคต ความรู้เป็นรอง วาจาเป็นหนึ่ง .</p>
+            </div>
+        </section>
+        <div class="container">
+        <section id="sop">
+            <h3>SOP</h3>
+            <div class="sop-content">
+                <p> sop .</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h3>โปรจ๊าบ</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project One">
+                    <div class="project-info">
+                        <h4>Project One Title</h4>
+                        <p> โปรเจคนี้ไม่มีอะไร เดี๋ยวเอามาใส่จร้า.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project Two">
+                    <div class="project-info">
+                        <h4>Project Two Title</h4>
+                        <p>อันนี้ก็ไม่มี.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project Three">
+                    <div class="project-info">
+                        <h4>Project Three Title</h4>
+                        <p>ยัง ยังไม่หยุดอ่าน.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h3>ติดต่อที่ไหน เดี๋ยวมาบอก</h3>
+            <div class="contact-info">
+                <p>โดเรมอน
